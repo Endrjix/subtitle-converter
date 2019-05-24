@@ -59,7 +59,7 @@ public class SrtImportHandler implements SubtitleImportHandler {
             String line = (String) lines.next();
             log.debug(line);
             lineNumber++;
-            if (line.matches("\\s*")) {
+            if (line.matches("^\\s*$")) {
                 continue;
             }
             String times = (String) lines.next();
